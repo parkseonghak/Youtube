@@ -5,11 +5,11 @@
     text-decoration: none;
 }
 body{
-    background-color: #fff;
+    background-color: #f9f9f9;
     position: relative;
 }
 header{
-    width:100%; height:55px;
+    width:100%; height:56px;
     position: fixed;
     background-color: #fff;
     display: flex;
@@ -54,6 +54,7 @@ header .midArea_01 .mid_container input[type="search"]{
 }
 header .midArea_01 .mid_container input[type="search"]::placeholder{
     padding:8px;
+    font-size:16px;
 }
 header .midArea_01 .mid_container a{
     position: absolute;
@@ -83,13 +84,13 @@ header .rightArea_01{
     justify-content: end;
     align-items: center;
 }
-header .rightArea_01 .app_icon{
-    background-color: #fff;
-    border:none;
-}
+header .rightArea_01 .app_icon,
 header .rightArea_01 .setting_icon{
     background-color: #fff;
     border:none;
+    padding:8px;
+    cursor: pointer;
+    margin-right:5px;
 }
 header .rightArea_01 a{
     border: 1px solid #065fd4;
@@ -99,4 +100,9 @@ header .rightArea_01 a{
     font-size:14px;
     width:99px;
     height:40px;
+    color:#065fd4;
+}
+header .rightArea_01 a svg{
+    fill:#065fd4;
+    margin-right:10px;
 }
