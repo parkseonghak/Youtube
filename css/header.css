@@ -16,6 +16,7 @@ header{
     justify-content: space-between;
     padding:0 16px;
     box-sizing: border-box;
+    z-index: 1;
 }
 header .leftArea_01{
     width:33.33%;
