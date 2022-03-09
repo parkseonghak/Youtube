@@ -19,7 +19,7 @@ header{
     z-index: 1;
 }
 header .leftArea_01{
-    width:33.33%;
+    width:225px;
     display: flex;
     align-items: center;
 }
@@ -41,11 +41,13 @@ header figure svg{
 }
 header .midArea_01{
     display: flex;
-    width:33.33%;
+    width:1000px;
     align-items: center;
+    justify-content: center;
+    flex-grow: 1;
 }
 header .midArea_01 .mid_container{
-    width:535px;
+    width:100%;
     position: relative;
 }
 header .midArea_01 .mid_container input[type="search"]{
@@ -82,10 +84,11 @@ header .midArea_01 .voice_icon{
     flex-shrink: 0;
 }
 header .rightArea_01{
-    width:33.33%;
+    width:225px;
     display: flex;
     justify-content: end;
     align-items: center;
+    flex-shrink: 0;
 }
 header .rightArea_01 .app_icon,
 header .rightArea_01 .setting_icon{
@@ -108,4 +111,18 @@ header .rightArea_01 a{
 header .rightArea_01 a svg{
     fill:#065fd4;
     margin-right:10px;
+}
+@media (max-width:655px){
+    header .midArea_01 .search_icon,
+    header .midArea_01 .voice_icon{
+        width:24px;
+        height:24px;
+        border:none;
+        background-color: #fff;
+    }
+    header .midArea_01 .mid_container input,
+    header .midArea_01 .mid_container a
+    {
+        display: none;
+    }
 }
